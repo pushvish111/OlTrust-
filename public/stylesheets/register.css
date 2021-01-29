@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 80vh;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.border {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 70%;
+  height: 90vh;
+  border: 2px solid #696969;
+  position: relative;
+}
+
+.logo > img {
+  width: 90%;
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
+.google_signin {
+  position: relative;
+}
+
+.google_signin > img {
+  width: 40%;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+.credentials {
+  margin-top: 50px;
+  margin-left: 70px;
+  position: relative;
+}
+.credentials > input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-shadow: 2px 2px 4px #696969;
+}
+
+.submit {
+  position: relative;
+  width: 100%;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.oltheme {
+  background-color: #f95700ff;
+  color: white;
+  width: 69%;
+  box-shadow: 2px 2px 4px #f95700ff;
+}
+
+.new {
+  padding: 10%;
+}
+.new > p {
+  text-align: center;
+}
+.orange {
+  color: #f95700ff;
+}
