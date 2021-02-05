@@ -10,6 +10,16 @@ app.get("/", function(req, res){
     res.render("landing.ejs");
 })
 
+//give them info
+app.get("/tnc", function(req, res){
+    res.render("tnc.ejs");
+})
+
+//post a new ad
+app.get("/post", function(req, res){
+    res.render("new.ejs");
+})
+
 //all Product page routes
 app.get("/laptops", function(req, res){
     res.render("laptops.ejs");

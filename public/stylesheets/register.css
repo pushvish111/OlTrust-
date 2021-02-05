@@ -34,15 +34,16 @@
 }
 
 .google_signin > img {
-  width: 40%;
-  margin-left: 25%;
-  margin-top: 25%;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
 }
 
 .credentials {
-  margin-top: 50px;
-  margin-left: 70px;
-  position: relative;
+  margin-top: 40px;
 }
 .credentials > input {
   width: 80%;
@@ -54,23 +55,31 @@
   margin-bottom: 16px;
   resize: vertical;
   box-shadow: 2px 2px 4px #696969;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .submit {
+  height: 100px;
   position: relative;
-  width: 100%;
-  margin-left: 70px;
-  margin-top: 20px;
 }
 .oltheme {
   background-color: #f95700ff;
   color: white;
-  width: 69%;
+  width: 81%;
   box-shadow: 2px 2px 4px #f95700ff;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .new {
-  padding: 10%;
+  padding: 5%;
 }
 .new > p {
   text-align: center;
