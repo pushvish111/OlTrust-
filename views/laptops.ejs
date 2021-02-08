@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oltrust Laptops</title>
+    <link rel="stylesheet" href="/stylesheet/laptops.css"> >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+
+</head>
+<body>
+    <% laptops.forEach(function(laptops){ %>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card" style="width: 18rem">
+                    <img
+                    src="https://mdbootstrap.com/img/new/standard/city/062.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    />
+                    <div class="card-body">
+                    <h5 class="card-title"><%= laptops.model %></h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= laptops.processor %> <%= laptops.generation %></li>
+                        <li class="list-group-item"><%= laptops.ram %></li>
+                        <li class="list-group-item"><%= laptops.storage %></li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <%  }); %> 
+
+
+    <a href="/laptops/tnc">post a new</a>
+    
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= laptops.model %></h5>
+                  <p class="card-text"></p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><%= laptops.storage %></li>
+                  <li class="list-group-item"><%= laptops.ram %></li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link"><%= laptops.price %></a>
+                  <a href="#" class="card-link">Add to wishlist</a>
+                </div>
+              </div>
+        </div>
+ 
+
+
+  
+</body>
+</html>
+
+<%= laptops.model %>
+<%= laptops.storage %>
+<%= laptops.ram %>
+<%= laptops.price %>
+
+
+<% laptops.forEach(function(laptops){ %>
+
+<%  }); %> 
