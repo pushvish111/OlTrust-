@@ -23,7 +23,7 @@ app.get("/laptops/tnc/post", function(req, res){
 })
 
 var laptops = [
-    { model: "thinkpad", processor: "i5", ram: "16gb", generation: "5th", storage: "256gb SSD", price: "19,999"}
+    { model: "Thinkpad T420", processor: "i5", ram: "16gb", generation: "5th", storage: "256gb SSD", price: "19,999"}
 ];
 
 //all Product page routes

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,10 @@
 <body>
 
     <a href="/laptops/tnc">post a new</a>
-
+    <div class="container">
     <div class = "row" id = "card">
-    <% laptops.forEach(function(laptops){ %>
-                <div class="col-md-3 col-sm-6 card" style="width: 18rem;">
+    <% laptops.forEach(function(laptops){ %> -->
+                <!-- <div class="col-md-3 col-sm-6 py-3 py-sm-0 card" style="width: 18rem;" >
                     <div class = "thumbnail">
                         <img
                         src="https://mdbootstrap.com/img/new/standard/city/062.jpg"
@@ -41,27 +41,74 @@
                             <a href="#" class="card-link">Another link</a>
                         </div>
                 </div>
+                
     <%  }); %> 
+    </div>
 </div>
-
-
  
     
  
-
-
   
 </body>
 </html>
-
 <%= laptops.model %>
 <%= laptops.storage %>
 <%= laptops.ram %>
 <%= laptops.price %>
-
-
 <% laptops.forEach(function(laptops){ %>
     <div>
         
     </div>
+<%  }); %>  -->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cards</title>
+	<link rel="stylesheet" href="../stylesheets/laptops.css">
+	 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+	
+	
+	</head>
+<body>
+    <a href="/laptops/tnc">post a new</a>
+
+<div class="container">      
+    <div class="row">
+        <% laptops.forEach(function(laptops){ %>
+    	<div class="col-sm-6 col-lg-3 lappy" >
+            <div>
+                <span class="image">
+                    <img style='height: 100%; width: 100%; object-fit: contain' src="https://images.idgesg.net/images/article/2019/10/aceraspire1-100815704-large.jpg">
+                </span>
+            </div>
+            <div class = "specification">
+                <span class="name">
+                    <h2><%= laptops.model %></h2>
+                </span>
+                <span class="specs">
+                    <ul>
+                        <li class="details"><%= laptops.processor %> <%= laptops.generation %></li>
+                        <li class="details"><%= laptops.ram %></li>
+                        <li class="details"><%= laptops.storage %></li>
+                        
+                    </ul>
+                </span>
+                <div class = "buy">
+                    <span class="price">
+                        <h2><b><%= laptops.price %>-/</b></h2>
+                    </span>
+                    <span>
+                        <button class="btn btn-primary" id = "buy"> Buy now</button>
+                    </span>
+                </div>    
+            </div>
+    	</div>
+    	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
 <%  }); %> 

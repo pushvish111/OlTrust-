@@ -1,12 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-#laptop-img {
-  width: 100%;
-  padding: 2%;
+.image > img {
+  width: 32vh;
+  height: 25vh;
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
 }
-#card {
-  width: 100%;
-  padding: 1%;
+.specs > ul {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 5px 5px 5px;
+  font-weight: 900px;
+  color: #696969;
+}
+.details {
+  list-style: none;
+  padding: 3px 5px 5px 12px;
+}
+.price > h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #f95700ff;
+  font-size: 25px;
+  margin-left: 15px;
+}
+.name > h2 {
+  padding: 5px 5px 5px;
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-left: 0.5em;
+  font-size: 25px;
+}
+.lappy {
+  border: 1px solid #696969;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.specification {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 0px;
+}
+.buy {
+  display: flex;
+}
+#buy {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #f95700ff !important;
+  border: none !important;
+}
+.btn-primary {
+  border-radius: 18px !important;
 }
